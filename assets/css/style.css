@@ -1,0 +1,191 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+.row-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+nav.nav {
+  width: 100%;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  background-color: red;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+nav.nav-light {
+  background-color: #eaeaea;
+  -webkit-box-shadow: -7px 0px 10px 3px #cabebe;
+          box-shadow: -7px 0px 10px 3px #cabebe;
+}
+
+nav button.nav-button {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  padding: 7px 16px;
+  border-radius: 2px;
+  display: none;
+}
+
+.nav-name-company {
+  height: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background-color: transparent;
+  font-size: 25px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  padding-left: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.nav-product-company {
+  height: 100%;
+  -webkit-box-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
+  background-color: transparent;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-right: 10px;
+}
+
+.nav-product-company ul.menu {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.nav-product-company ul.menu li {
+  padding: 12px 10px;
+  display: list-item;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  border-radius: 4px;
+}
+
+.nav-product-company ul.menu li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.nav-product-company ul.menu li:hover {
+  text-decoration: underline;
+}
+
+.img-responsive {
+  max-width: 100%;
+  width: auto;
+}
+
+.menu-xs {
+  position: fixed;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #eaeaea;
+  padding: 30px 20px 20px 20px;
+  -webkit-box-shadow: -7px 0px 10px 3px #cabebe;
+          box-shadow: -7px 0px 10px 3px #cabebe;
+  display: none;
+}
+
+.row-close-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.close-menu-xs {
+  padding: 10px 20px;
+  background-color: transparent;
+  border-radius: 4px;
+  font-size: 25px;
+}
+
+.row-main-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.row-main-menu ul.main-menu-xs {
+  list-style-type: none;
+}
+
+.row-main-menu ul.main-menu-xs li:first-child {
+  margin-top: 30px;
+}
+
+.row-main-menu ul.main-menu-xs li {
+  margin-bottom: 20px;
+  font-size: 25px;
+  border-bottom: 1px solid black;
+}
+
+.row-main-menu ul.main-menu-xs li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.d-block {
+  display: block;
+}
+
+@media (max-width: 576px) {
+  .nav-product-company {
+    display: none;
+  }
+  nav button.nav-button {
+    display: block;
+  }
+}
+/*# sourceMappingURL=style.css.map */

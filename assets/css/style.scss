@@ -1,0 +1,174 @@
+@import '_mix';
+@import '_variables';
+
+* {
+    padding: 0px;
+    margin: 0px;
+
+}
+
+.row-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    // align-items: center;
+}
+
+nav.nav {
+    width: 100%;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 10px;
+    background-color: red;
+    box-sizing: border-box;
+}
+
+nav.nav-light {
+    background-color: $light;
+    box-shadow: -7px 0px 10px 3px #cabebe;
+}
+
+nav {
+    button.nav-button {
+        border: none;
+        background-color: transparent;
+        outline: none;
+        padding: 7px 16px;
+        border-radius: 2px;
+        display: none;
+    }
+}
+
+.nav-name-company {
+    height: 100%;
+    flex: 1;
+    background-color: transparent;
+    font-size: 25px;
+    font-family: $mainFont;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+
+.nav-product-company {
+    height: 100%;
+    flex: 4;
+    background-color: transparent;
+    box-sizing: border-box;
+    padding-right: 10px;
+
+    ul.menu {
+        list-style-type: none;
+        display: flex;
+        justify-content: flex-end;
+
+        li {
+            padding: 12px 10px;
+            display: list-item;
+            // margin-right: 8px;
+            font-family: $mainFont;
+            border-radius: 4px;
+
+            a {
+                text-decoration: none;
+                color: #000;
+            }
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.img-responsive {
+    max-width: 100%;
+    width: auto;
+}
+
+.menu-xs {
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: $light;
+    padding: 30px 20px 20px 20px;
+    box-shadow: -7px 0px 10px 3px #cabebe;
+    display: none;
+}
+
+.row-close-menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    // align-items: center;
+    justify-content: flex-end;
+}
+
+.close-menu-xs {
+    padding: 10px 20px;
+    background-color: transparent;
+    border-radius: 4px;
+    font-size: 25px;
+}
+
+.row-main-menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    ul.main-menu-xs {
+        list-style-type: none;
+
+        li:first-child {
+            margin-top: 30px;
+        }
+
+        li {
+            margin-bottom: 20px;
+            font-size: 25px;
+            border-bottom: 1px solid black;
+
+            a {
+                text-decoration: none;
+                color: #000;
+            }
+        }
+    }
+}
+
+
+.d-block {
+    display: block;
+}
+
+// Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 576px) {
+    .nav-product-company {
+        display: none;
+    }
+
+    nav {
+        button.nav-button {
+            display: block;
+        }
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (max-width: 768px) {}
+
+// Large devices (desktops, 992px and up)
+@media (max-width: 992px) {}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (max-width: 1200px) {}
