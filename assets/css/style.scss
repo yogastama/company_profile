@@ -4,7 +4,11 @@
 * {
     padding: 0px;
     margin: 0px;
+    z-index: 1;
+}
 
+.mt-2 {
+    margin-top: 1.5rem;
 }
 
 .row-flex {
@@ -148,6 +152,70 @@ nav {
     display: block;
 }
 
+main {
+    width: 100% !important;
+}
+
+.sliders {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    height: 500px;
+}
+
+.images {
+    width: 100%;
+    height: 500px;
+    // background-color: red;
+    flex: 15;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0px 10px 10px 3px #cabebe;
+
+    .image {
+
+        img {
+            display: none;
+        }
+
+        img.active {
+            width: 100%;
+            display: block;
+        }
+    }
+}
+
+.wrap-btn-slider {
+    flex: 1;
+}
+
+.prev-btn-slider,
+.next-btn-slider {
+    height: 40px;
+    width: 40px;
+    background-color: #fff;
+    color: black;
+    border-radius: 50%;
+    line-height: 40px;
+    text-align: center;
+    transition: ease .2s all;
+
+    &:hover {
+        box-shadow: 0px 0px 10px 3px #cabebe;
+        cursor: pointer;
+    }
+}
+
+.prev-btn-slider {
+    margin: 0 auto;
+}
+
+.next-btn-slider {
+    margin: 0 auto;
+}
+
 // Extra small devices (portrait phones, less than 576px)
 // No media query for `xs` since this is the default in Bootstrap
 
@@ -161,6 +229,14 @@ nav {
         button.nav-button {
             display: block;
         }
+    }
+
+    .prev-btn-slider {
+        margin-left: 20px;
+    }
+
+    .next-btn-slider {
+        margin-right: 20px;
     }
 }
 
