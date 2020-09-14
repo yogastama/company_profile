@@ -283,11 +283,11 @@ main {
 
 // end about
 
-// whyus
+// services
 .services {
     margin-top: 3rem;
     width: 100%;
-    height: 500px;
+    padding-bottom: 100px;
     font-family: $mainFont;
     background-color: #fff;
 
@@ -347,7 +347,93 @@ main {
     }
 }
 
-// end whyus
+// end services
+
+// portfolio
+.portfolio {
+    margin-top: 3rem;
+    width: 100%;
+    padding-bottom: 100px;
+    font-family: $mainFont;
+    background-color: #eaeaea;
+
+    .title-portfolio {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 45px;
+    }
+
+    .desc-portfolio {
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 30px;
+        text-align: center;
+        line-height: 30px;
+    }
+
+    .filter-portfolio {
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+
+        .btn-portfolio {
+            padding: 10px 20px;
+            background-color: rgba(92, 89, 89, 0.877);
+            outline: none;
+            border: none;
+            margin-right: 4px;
+            cursor: pointer;
+            text-transform: uppercase;
+
+            &:hover {
+                box-sizing: border-box;
+                border: 1px solid rgb(92, 85, 85);
+                background-color: blanchedalmond;
+                color: rgb(92, 85, 85);
+            }
+        }
+    }
+
+    .main-portfolio {
+        margin-top: 30px;
+
+        .row-flex {
+            width: 80%;
+            margin: 0 auto;
+            justify-content: flex-start;
+
+            .image-portfolio {
+                box-sizing: border-box;
+                width: calc(100% / 3);
+                padding: 30px;
+                height: 300px;
+                background-color: transparent;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                overflow: hidden;
+
+                img {
+                    // width: 100%;
+                    height: 100%;
+                    border-radius: 10px;
+                    transition: ease .3s all;
+                    cursor: pointer;
+
+                    &:hover {
+                        width: 110%;
+                        box-shadow: 0px 0px 80px 5px #cabebe;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// end portfolio
 // end main
 
 
@@ -410,5 +496,28 @@ main {
 
     .images {
         height: 100%;
+    }
+
+    .portfolio {
+        .main-portfolio {
+            .row-flex {
+                width: 100%;
+                align-items: center;
+                flex-direction: column;
+                margin-bottom: 20px;
+
+                .image-portfolio {
+                    width: 100%;
+
+                    img {
+
+                        &:hover {
+                            width: 100%;
+                            // box-shadow: 0px 0px 80px 5px #cabebe;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
