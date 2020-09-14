@@ -236,6 +236,15 @@ main {
           align-items: center;
 }
 
+.images .image .text-slider img {
+  display: none;
+}
+
+.images .image .text-slider img.active {
+  width: 100%;
+  display: block;
+}
+
 .images .image img {
   display: none;
 }
@@ -279,6 +288,159 @@ main {
   margin: 0 auto;
 }
 
+.about {
+  margin-top: 3rem;
+  width: 100%;
+  padding-bottom: 100px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: #eaeaea;
+}
+
+.about .title-about {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 45px;
+}
+
+.about .main-about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.about .main-about .desc-about {
+  padding: 50px;
+  word-spacing: 1px;
+  line-height: 25px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: justify;
+  color: rgba(51, 51, 51, 0.733);
+}
+
+.about .main-about .logo-about {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 30px;
+}
+
+.about .main-about .logo-about img {
+  width: 300px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 10px 3px #cabebec9;
+          box-shadow: 0px 0px 10px 3px #cabebec9;
+}
+
+.services {
+  margin-top: 3rem;
+  width: 100%;
+  height: 500px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: #fff;
+}
+
+.services .title-services {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 45px;
+}
+
+.services .main-services .row-flex {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.services .main-services .row-flex .column-services {
+  width: 300px;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.services .main-services .row-flex .column-services .icon-services {
+  width: 80px;
+  height: 80px;
+  background-color: #eaeaea;
+  text-align: center;
+  line-height: 80px;
+  font-size: 40px;
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 0px 20px 2px #cabebedc;
+          box-shadow: 0px 0px 20px 2px #cabebedc;
+  -webkit-transition: ease .5s all;
+  transition: ease .5s all;
+}
+
+.services .main-services .row-flex .column-services .icon-services:hover {
+  -webkit-box-shadow: 0px 0px 20px 2px #b3aeaedc;
+          box-shadow: 0px 0px 20px 2px #b3aeaedc;
+}
+
+.services .main-services .row-flex .column-services .name-services {
+  margin-top: 40px;
+  font-weight: bold;
+  letter-spacing: .5px;
+}
+
+.services .main-services .row-flex .column-services .desc-services {
+  width: 90%;
+  margin: 20px 10px 0px 10px;
+  text-align: center;
+}
+
 @media (max-width: 992px) {
   .sliders {
     height: 400px;
@@ -294,6 +456,12 @@ main {
   }
   .images {
     height: 100%;
+  }
+  .about .main-about {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
