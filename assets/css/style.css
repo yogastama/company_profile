@@ -1,7 +1,6 @@
 * {
   padding: 0px;
   margin: 0px;
-  z-index: 1;
 }
 
 .mt-2 {
@@ -160,9 +159,11 @@ nav button.nav-button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  z-index: 999999999999999999;
 }
 
 .row-main-menu ul.main-menu-xs {
+  z-index: 999999999999999999;
   list-style-type: none;
 }
 
@@ -219,6 +220,22 @@ main {
           box-shadow: 0px 10px 10px 3px #cabebe;
 }
 
+.images .image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .images .image img {
   display: none;
 }
@@ -243,8 +260,8 @@ main {
   border-radius: 50%;
   line-height: 40px;
   text-align: center;
-  -webkit-transition: ease .2s all;
-  transition: ease .2s all;
+  -webkit-transition: ease 0.2s all;
+  transition: ease 0.2s all;
 }
 
 .prev-btn-slider:hover,
@@ -262,6 +279,24 @@ main {
   margin: 0 auto;
 }
 
+@media (max-width: 992px) {
+  .sliders {
+    height: 400px;
+  }
+  .images {
+    height: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .sliders {
+    height: 300px;
+  }
+  .images {
+    height: 100%;
+  }
+}
+
 @media (max-width: 576px) {
   .nav-product-company {
     display: none;
@@ -270,10 +305,16 @@ main {
     display: block;
   }
   .prev-btn-slider {
-    margin-left: 20px;
+    margin: 0 10px;
   }
   .next-btn-slider {
-    margin-right: 20px;
+    margin: 0 10px;
+  }
+  .sliders {
+    height: 100%;
+  }
+  .images {
+    height: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */

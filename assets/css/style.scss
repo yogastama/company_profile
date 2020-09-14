@@ -1,250 +1,272 @@
-@import '_mix';
-@import '_variables';
+@import "_mix";
+@import "_variables";
 
 * {
-    padding: 0px;
-    margin: 0px;
-    z-index: 1;
+  padding: 0px;
+  margin: 0px;
 }
 
 .mt-2 {
-    margin-top: 1.5rem;
+  margin-top: 1.5rem;
 }
 
 .row-flex {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    // align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  // align-items: center;
 }
 
 nav.nav {
-    width: 100%;
-    padding-top: 10px !important;
-    padding-bottom: 10px !important;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-    padding: 10px;
-    background-color: red;
-    box-sizing: border-box;
+  width: 100%;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  padding: 10px;
+  background-color: red;
+  box-sizing: border-box;
 }
 
 nav.nav-light {
-    background-color: $light;
-    box-shadow: -7px 0px 10px 3px #cabebe;
+  background-color: $light;
+  box-shadow: -7px 0px 10px 3px #cabebe;
 }
 
 nav {
-    button.nav-button {
-        border: none;
-        background-color: transparent;
-        outline: none;
-        padding: 7px 16px;
-        border-radius: 2px;
-        display: none;
-    }
+  button.nav-button {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    padding: 7px 16px;
+    border-radius: 2px;
+    display: none;
+  }
 }
 
 .nav-name-company {
-    height: 100%;
-    flex: 1;
-    background-color: transparent;
-    font-size: 25px;
-    font-family: $mainFont;
-    padding-left: 10px;
-    box-sizing: border-box;
+  height: 100%;
+  flex: 1;
+  background-color: transparent;
+  font-size: 25px;
+  font-family: $mainFont;
+  padding-left: 10px;
+  box-sizing: border-box;
 }
 
-
 .nav-product-company {
-    height: 100%;
-    flex: 4;
-    background-color: transparent;
-    box-sizing: border-box;
-    padding-right: 10px;
+  height: 100%;
+  flex: 4;
+  background-color: transparent;
+  box-sizing: border-box;
+  padding-right: 10px;
 
-    ul.menu {
-        list-style-type: none;
-        display: flex;
-        justify-content: flex-end;
+  ul.menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
 
-        li {
-            padding: 12px 10px;
-            display: list-item;
-            // margin-right: 8px;
-            font-family: $mainFont;
-            border-radius: 4px;
+    li {
+      padding: 12px 10px;
+      display: list-item;
+      // margin-right: 8px;
+      font-family: $mainFont;
+      border-radius: 4px;
 
-            a {
-                text-decoration: none;
-                color: #000;
-            }
+      a {
+        text-decoration: none;
+        color: #000;
+      }
 
-            &:hover {
-                text-decoration: underline;
-            }
-        }
+      &:hover {
+        text-decoration: underline;
+      }
     }
+  }
 }
 
 .img-responsive {
-    max-width: 100%;
-    width: auto;
+  max-width: 100%;
+  width: auto;
 }
 
 .menu-xs {
-    position: fixed;
-    bottom: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: $light;
-    padding: 30px 20px 20px 20px;
-    box-shadow: -7px 0px 10px 3px #cabebe;
-    display: none;
+  position: fixed;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: $light;
+  padding: 30px 20px 20px 20px;
+  box-shadow: -7px 0px 10px 3px #cabebe;
+  display: none;
 }
 
 .row-close-menu {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    // align-items: center;
-    justify-content: flex-end;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  // align-items: center;
+  justify-content: flex-end;
 }
 
 .close-menu-xs {
-    padding: 10px 20px;
-    background-color: transparent;
-    border-radius: 4px;
-    font-size: 25px;
+  padding: 10px 20px;
+  background-color: transparent;
+  border-radius: 4px;
+  font-size: 25px;
 }
 
 .row-main-menu {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  z-index: 999999999999999999;
+  ul.main-menu-xs {
+    z-index: 999999999999999999;
+    list-style-type: none;
 
-    ul.main-menu-xs {
-        list-style-type: none;
-
-        li:first-child {
-            margin-top: 30px;
-        }
-
-        li {
-            margin-bottom: 20px;
-            font-size: 25px;
-            border-bottom: 1px solid black;
-
-            a {
-                text-decoration: none;
-                color: #000;
-            }
-        }
+    li:first-child {
+      margin-top: 30px;
     }
+
+    li {
+      margin-bottom: 20px;
+      font-size: 25px;
+      border-bottom: 1px solid black;
+
+      a {
+        text-decoration: none;
+        color: #000;
+      }
+    }
+  }
 }
 
-
 .d-block {
-    display: block;
+  display: block;
 }
 
 main {
-    width: 100% !important;
+  width: 100% !important;
 }
 
 .sliders {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 8px;
-    height: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  height: 500px;
 }
 
 .images {
-    width: 100%;
-    height: 500px;
-    // background-color: red;
-    flex: 15;
-    overflow: hidden;
-    border-radius: 8px;
-    box-shadow: 0px 10px 10px 3px #cabebe;
+  width: 100%;
+  height: 500px;
+  // background-color: red;
+  flex: 15;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0px 10px 10px 3px #cabebe;
 
-    .image {
-
-        img {
-            display: none;
-        }
-
-        img.active {
-            width: 100%;
-            display: block;
-        }
+  .image {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    img {
+      display: none;
     }
+
+    img.active {
+      width: 100%;
+      display: block;
+    }
+  }
 }
 
 .wrap-btn-slider {
-    flex: 1;
+  flex: 1;
 }
 
 .prev-btn-slider,
 .next-btn-slider {
-    height: 40px;
-    width: 40px;
-    background-color: #fff;
-    color: black;
-    border-radius: 50%;
-    line-height: 40px;
-    text-align: center;
-    transition: ease .2s all;
+  height: 40px;
+  width: 40px;
+  background-color: #fff;
+  color: black;
+  border-radius: 50%;
+  line-height: 40px;
+  text-align: center;
+  transition: ease 0.2s all;
 
-    &:hover {
-        box-shadow: 0px 0px 10px 3px #cabebe;
-        cursor: pointer;
-    }
+  &:hover {
+    box-shadow: 0px 0px 10px 3px #cabebe;
+    cursor: pointer;
+  }
 }
 
 .prev-btn-slider {
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 .next-btn-slider {
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 // Extra small devices (portrait phones, less than 576px)
 // No media query for `xs` since this is the default in Bootstrap
+// Extra large devices (large desktops, 1200px and up)
+@media (max-width: 1200px) {
+}
+// Large devices (desktops, 992px and up)
+@media (max-width: 992px) {
+  .sliders {
+    height: 400px;
+  }
+
+  .images {
+    height: 100%;
+  }
+}
+// Medium devices (tablets, 768px and up)
+@media (max-width: 768px) {
+  .sliders {
+    height: 300px;
+  }
+
+  .images {
+    height: 100%;
+  }
+}
 
 // Small devices (landscape phones, 576px and up)
 @media (max-width: 576px) {
-    .nav-product-company {
-        display: none;
-    }
+  .nav-product-company {
+    display: none;
+  }
 
-    nav {
-        button.nav-button {
-            display: block;
-        }
+  nav {
+    button.nav-button {
+      display: block;
     }
+  }
 
-    .prev-btn-slider {
-        margin-left: 20px;
-    }
+  .prev-btn-slider {
+    margin: 0 10px;
+  }
 
-    .next-btn-slider {
-        margin-right: 20px;
-    }
+  .next-btn-slider {
+    margin: 0 10px;
+  }
+  .sliders {
+    height: 100%;
+  }
+
+  .images {
+    height: 100%;
+  }
 }
-
-// Medium devices (tablets, 768px and up)
-@media (max-width: 768px) {}
-
-// Large devices (desktops, 992px and up)
-@media (max-width: 992px) {}
-
-// Extra large devices (large desktops, 1200px and up)
-@media (max-width: 1200px) {}
