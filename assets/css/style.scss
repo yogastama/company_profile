@@ -6,6 +6,8 @@
   margin: 0px;
 }
 
+@import "_components";
+
 .mt-2 {
   margin-top: 1.5rem;
 }
@@ -233,6 +235,7 @@ main {
 .next-btn-slider {
   margin: 0 auto;
 }
+
 // end sliders
 // about
 .about {
@@ -279,6 +282,7 @@ main {
     }
   }
 }
+
 // end about
 
 // services
@@ -344,6 +348,7 @@ main {
     }
   }
 }
+
 // end services
 
 // portfolio
@@ -429,6 +434,7 @@ main {
     }
   }
 }
+
 // end portfolio
 
 // our team
@@ -455,6 +461,7 @@ main {
     text-align: center;
     line-height: 30px;
   }
+
   .main-our-team {
     display: flex;
     flex-direction: flex-start;
@@ -462,6 +469,7 @@ main {
     justify-content: space-between;
     margin: 2rem auto;
     flex-wrap: wrap;
+
     .box-our-team {
       width: calc(calc(100% / 4) - 20px);
       // background-color: #f00;
@@ -470,6 +478,7 @@ main {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
+
       .image-our-team {
         width: 100%;
         padding: 10px;
@@ -479,14 +488,17 @@ main {
         justify-content: center;
         align-items: center;
         height: 240px;
+
         img {
           border-radius: 10px;
           height: 100%;
         }
       }
+
       .text-our-team {
         width: 100%;
       }
+
       .name-our-team {
         width: 100%;
         border-radius: 10px;
@@ -498,6 +510,7 @@ main {
     }
   }
 }
+
 // end our team
 // qna
 .qna {
@@ -515,17 +528,21 @@ main {
     align-items: center;
     padding-top: 45px;
   }
+
   .main-qna {
     margin-top: 2rem;
+
     .row-flex {
       flex-direction: flex-start;
       flex-wrap: wrap;
       width: 80%;
       margin: 0 auto;
+
       .box-qna {
         width: calc(100% / 2);
         box-sizing: border-box;
         padding: 10px;
+
         .ask-qna {
           margin-bottom: 1rem;
         }
@@ -533,14 +550,74 @@ main {
     }
   }
 }
+
 // end qna
+
+// contact
+.contact {
+  margin-top: 3rem;
+  width: 100%;
+  padding-bottom: 100px;
+  font-family: $mainFont;
+  background-color: #fff;
+
+  .title-contact {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 45px;
+    margin-bottom: 2rem;
+  }
+
+  .main-contact {
+    display: flex;
+    flex-direction: flex-start;
+    width: 80%;
+    margin: 0 auto;
+
+    .form-contact {
+      width: 70%;
+      height: 50%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .information-contact {
+      width: 30%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+
+      .box-contact {
+        width: 100%;
+        padding: 20px 10px;
+        background-color: rgba(201, 195, 195, 0.884);
+        box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+        border-radius: 10px;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+
+        .icon-contact {
+          font-size: 30px;
+          // border: 1px dashed black;
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+}
+
+// end contact
 // end main
 
 // Extra small devices (portrait phones, less than 576px)
 // No media query for `xs` since this is the default in Bootstrap
 // Extra large devices (large desktops, 1200px and up)
-@media (max-width: 1200px) {
-}
+@media (max-width: 1200px) {}
 
 // Large devices (desktops, 992px and up)
 @media (max-width: 992px) {
@@ -551,6 +628,7 @@ main {
   .images {
     height: 100%;
   }
+
   .portfolio {
     .main-portfolio {
       .row-flex {
@@ -560,9 +638,11 @@ main {
       }
     }
   }
+
   .our-team {
     .main-our-team {
       flex-direction: flex-start;
+
       .box-our-team {
         width: calc(calc(100% / 2) - 20px);
         // background-color: #f00;
@@ -586,6 +666,7 @@ main {
       flex-direction: column;
     }
   }
+
   .portfolio {
     .main-portfolio {
       .row-flex {
@@ -595,6 +676,7 @@ main {
       }
     }
   }
+
   .our-team {
     .main-our-team {
       flex-direction: flex-start;
@@ -603,6 +685,20 @@ main {
         width: 80%;
         margin: 0 auto;
         // background-color: #f00;
+      }
+    }
+  }
+
+  .contact {
+    .main-contact {
+      flex-direction: column;
+
+      .form-contact {
+        width: 100%;
+      }
+
+      .information-contact {
+        width: 100%;
       }
     }
   }
@@ -635,6 +731,7 @@ main {
   .images {
     height: 100%;
   }
+
   .portfolio {
     .main-portfolio {
       .row-flex {
@@ -644,6 +741,7 @@ main {
       }
     }
   }
+
   .qna {
     .main-qna {
       .row-flex {
