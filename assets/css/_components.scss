@@ -10,6 +10,12 @@
 }
 
 // end bg
+// padding
+.p-1 {
+    padding: 1rem;
+}
+
+// end padding
 // margin
 .mtop-1 {
     margin-top: 1rem;
@@ -48,6 +54,21 @@
         border-radius: 5px;
         padding: 2px;
         border: 1px solid rgb(138, 138, 139);
+
+        &:focus {
+            outline: none;
+            box-shadow: 0 0 30px rgba(85, 86, 87, 0.6);
+        }
+    }
+}
+
+.input-subscribe {
+
+    input {
+        margin-right: 0px;
+        // border: none;
+        height: 30px;
+        font-size: 20px;
 
         &:focus {
             outline: none;

@@ -614,6 +614,92 @@ main {
 // end contact
 // end main
 
+// footer
+footer {
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+  font-family: $mainFont;
+
+  .row-flex {
+    width: 80%;
+    margin: 0 auto;
+
+    .desc-footer,
+    .link-footer,
+    .service-footer {
+      flex: 1;
+    }
+
+    .desc-footer {
+      // background-color: #f00;
+
+      .company-name-footer {
+        font-family: $mainFont
+      }
+
+      .company-address-footer {
+        margin-top: 1rem;
+        font-family: $mainFont
+      }
+
+      .phone-company-footer {
+        margin-top: 1rem;
+        font-family: $mainFont
+      }
+
+      .email-company-footer {
+        font-family: $mainFont;
+      }
+    }
+
+    .link-footer,
+    .service-footer {
+      padding-top: 13px;
+
+      span {
+        font-weight: bold;
+        font-size: 20px;
+      }
+
+      ul {
+        margin-top: 1rem;
+        list-style-type: none;
+
+        li {
+          margin: 8px 0px;
+        }
+      }
+    }
+
+    .news-letter-footer {
+      flex: 2;
+      padding-top: 13px;
+
+      span {
+        font-weight: bold;
+        font-size: 20px;
+      }
+
+      .desc-news-letter {
+        margin: 10px 0px;
+      }
+    }
+
+  }
+}
+
+.row-flex {
+  padding: 10px 0px;
+
+  .copyright {
+    margin: 0 auto;
+    font-family: $mainFont;
+    text-align: center;
+  }
+}
+
+// end footer
+
 // Extra small devices (portrait phones, less than 576px)
 // No media query for `xs` since this is the default in Bootstrap
 // Extra large devices (large desktops, 1200px and up)
@@ -750,6 +836,12 @@ main {
           margin-bottom: 1rem;
         }
       }
+    }
+  }
+
+  footer {
+    .row-flex {
+      flex-direction: column;
     }
   }
 }

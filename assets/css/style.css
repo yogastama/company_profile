@@ -13,6 +13,10 @@
   background-color: #eaeaea !important;
 }
 
+.p-1 {
+  padding: 1rem;
+}
+
 .mtop-1 {
   margin-top: 1rem;
 }
@@ -58,6 +62,18 @@
 }
 
 .input-control textarea:focus {
+  outline: none;
+  -webkit-box-shadow: 0 0 30px rgba(85, 86, 87, 0.6);
+          box-shadow: 0 0 30px rgba(85, 86, 87, 0.6);
+}
+
+.input-subscribe input {
+  margin-right: 0px;
+  height: 30px;
+  font-size: 20px;
+}
+
+.input-subscribe input:focus {
   outline: none;
   -webkit-box-shadow: 0 0 30px rgba(85, 86, 87, 0.6);
           box-shadow: 0 0 30px rgba(85, 86, 87, 0.6);
@@ -859,6 +875,91 @@ main {
   margin-bottom: 15px;
 }
 
+footer {
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+footer .row-flex {
+  width: 80%;
+  margin: 0 auto;
+}
+
+footer .row-flex .desc-footer,
+footer .row-flex .link-footer,
+footer .row-flex .service-footer {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+footer .row-flex .desc-footer .company-name-footer {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+footer .row-flex .desc-footer .company-address-footer {
+  margin-top: 1rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+footer .row-flex .desc-footer .phone-company-footer {
+  margin-top: 1rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+footer .row-flex .desc-footer .email-company-footer {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+footer .row-flex .link-footer,
+footer .row-flex .service-footer {
+  padding-top: 13px;
+}
+
+footer .row-flex .link-footer span,
+footer .row-flex .service-footer span {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+footer .row-flex .link-footer ul,
+footer .row-flex .service-footer ul {
+  margin-top: 1rem;
+  list-style-type: none;
+}
+
+footer .row-flex .link-footer ul li,
+footer .row-flex .service-footer ul li {
+  margin: 8px 0px;
+}
+
+footer .row-flex .news-letter-footer {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  padding-top: 13px;
+}
+
+footer .row-flex .news-letter-footer span {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+footer .row-flex .news-letter-footer .desc-news-letter {
+  margin: 10px 0px;
+}
+
+.row-flex {
+  padding: 10px 0px;
+}
+
+.row-flex .copyright {
+  margin: 0 auto;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-align: center;
+}
+
 @media (max-width: 992px) {
   .sliders {
     height: 400px;
@@ -945,6 +1046,12 @@ main {
   .qna .main-qna .row-flex .box-qna {
     width: 100%;
     margin-bottom: 1rem;
+  }
+  footer .row-flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 /*# sourceMappingURL=style.css.map */
