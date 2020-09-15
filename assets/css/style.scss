@@ -499,6 +499,41 @@ main {
   }
 }
 // end our team
+// qna
+.qna {
+  margin-top: 3rem;
+  width: 100%;
+  padding-bottom: 100px;
+  font-family: $mainFont;
+  background-color: #fff;
+
+  .title-qna {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 45px;
+  }
+  .main-qna {
+    margin-top: 2rem;
+    .row-flex {
+      flex-direction: flex-start;
+      flex-wrap: wrap;
+      width: 80%;
+      margin: 0 auto;
+      .box-qna {
+        width: calc(100% / 2);
+        box-sizing: border-box;
+        padding: 10px;
+        .ask-qna {
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+}
+// end qna
 // end main
 
 // Extra small devices (portrait phones, less than 576px)
@@ -605,6 +640,16 @@ main {
       .row-flex {
         .image-portfolio {
           width: 100%;
+        }
+      }
+    }
+  }
+  .qna {
+    .main-qna {
+      .row-flex {
+        .box-qna {
+          width: 100%;
+          margin-bottom: 1rem;
         }
       }
     }
