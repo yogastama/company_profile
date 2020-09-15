@@ -420,8 +420,8 @@ main {
   border-radius: 50%;
   -webkit-box-shadow: 0px 0px 20px 2px #cabebedc;
           box-shadow: 0px 0px 20px 2px #cabebedc;
-  -webkit-transition: ease .5s all;
-  transition: ease .5s all;
+  -webkit-transition: ease 0.5s all;
+  transition: ease 0.5s all;
 }
 
 .services .main-services .row-flex .column-services .icon-services:hover {
@@ -432,7 +432,7 @@ main {
 .services .main-services .row-flex .column-services .name-services {
   margin-top: 40px;
   font-weight: bold;
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
 }
 
 .services .main-services .row-flex .column-services .desc-services {
@@ -520,7 +520,6 @@ main {
           box-sizing: border-box;
   width: calc(100% / 3);
   padding: 30px;
-  height: 300px;
   background-color: transparent;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -535,17 +534,112 @@ main {
 }
 
 .portfolio .main-portfolio .row-flex .image-portfolio img {
-  height: 100%;
+  width: 100%;
   border-radius: 10px;
-  -webkit-transition: ease .3s all;
-  transition: ease .3s all;
+  -webkit-transition: ease 0.3s all;
+  transition: ease 0.3s all;
   cursor: pointer;
 }
 
-.portfolio .main-portfolio .row-flex .image-portfolio img:hover {
-  width: 110%;
-  -webkit-box-shadow: 0px 0px 80px 5px #cabebe;
-          box-shadow: 0px 0px 80px 5px #cabebe;
+.our-team {
+  margin-top: 3rem;
+  width: 100%;
+  padding-bottom: 100px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: #fff;
+}
+
+.our-team .title-our-team {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 45px;
+}
+
+.our-team .desc-our-team {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 30px;
+  text-align: center;
+  line-height: 30px;
+}
+
+.our-team .main-our-team {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: flex-start;
+          flex-direction: flex-start;
+  width: 90%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 2rem auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.our-team .main-our-team .box-our-team {
+  width: calc(calc(100% / 4) - 20px);
+  border-radius: 10px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.our-team .main-our-team .box-our-team .image-our-team {
+  width: 100%;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 240px;
+}
+
+.our-team .main-our-team .box-our-team .image-our-team img {
+  border-radius: 10px;
+  height: 100%;
+}
+
+.our-team .main-our-team .box-our-team .text-our-team {
+  width: 100%;
+}
+
+.our-team .main-our-team .box-our-team .name-our-team {
+  width: 100%;
+  border-radius: 10px;
+  padding: 10px 0px;
+  background-color: rgba(207, 204, 204, 0.904);
+  text-align: center;
 }
 
 @media (max-width: 992px) {
@@ -554,6 +648,18 @@ main {
   }
   .images {
     height: 100%;
+  }
+  .portfolio .main-portfolio .row-flex .image-portfolio {
+    width: calc(100% / 2);
+  }
+  .our-team .main-our-team {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: flex-start;
+            flex-direction: flex-start;
+  }
+  .our-team .main-our-team .box-our-team {
+    width: calc(calc(100% / 2) - 20px);
   }
 }
 
@@ -569,6 +675,19 @@ main {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .portfolio .main-portfolio .row-flex .image-portfolio {
+    width: calc(100% / 2);
+  }
+  .our-team .main-our-team {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: flex-start;
+            flex-direction: flex-start;
+  }
+  .our-team .main-our-team .box-our-team {
+    width: 80%;
+    margin: 0 auto;
   }
 }
 
@@ -591,21 +710,7 @@ main {
   .images {
     height: 100%;
   }
-  .portfolio .main-portfolio .row-flex {
-    width: 100%;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin-bottom: 20px;
-  }
   .portfolio .main-portfolio .row-flex .image-portfolio {
-    width: 100%;
-  }
-  .portfolio .main-portfolio .row-flex .image-portfolio img:hover {
     width: 100%;
   }
 }
