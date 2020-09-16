@@ -16,12 +16,23 @@ const nextBtnSlider = dom('.next-btn-slider');
 const btnPortfolio = Array.from(domAll('.btn-portfolio'));
 const imagePortfolio = Array.from(domAll('.image-portfolio'));
 const modalPreview = dom('.modal-preview');
+const sidebarLink = domAll('.anchor-nav');
+const sidebar = dom('#sidebar');
 navButton.addEventListener('click', function () {
     menuxs.classList.toggle('d-block');
 });
 closemenuxs.addEventListener('click', function () {
     menuxs.classList.toggle('d-block');
 });
+console.log(sidebar);
+
+// anchor
+sidebarLink.forEach((item, index) => {
+    item.addEventListener('click', function () {
+        sidebar.classList.toggle('d-none');
+    });
+});
+// end anchor
 Array.prototype.remove = function () {
     var what, a = arguments,
         L = a.length,

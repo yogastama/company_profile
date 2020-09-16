@@ -613,6 +613,13 @@ main {
           // border: 1px dashed black;
           margin-bottom: 15px;
         }
+
+        .text-contact {
+          a {
+            text-decoration: none;
+            color: #000;
+          }
+        }
       }
     }
   }
@@ -674,6 +681,11 @@ footer {
 
         li {
           margin: 8px 0px;
+
+          a {
+            text-decoration: none;
+            color: #333;
+          }
         }
       }
     }
@@ -689,6 +701,17 @@ footer {
 
       .desc-news-letter {
         margin: 10px 0px;
+      }
+
+      .input-subscribe {
+        input {
+          margin-bottom: .5rem;
+          margin-top: .5rem;
+
+          &:focus {
+            outline: none;
+          }
+        }
       }
     }
 
@@ -746,6 +769,16 @@ footer {
 
 // Medium devices (tablets, 768px and up)
 @media (max-width: 768px) {
+  .nav-product-company {
+    display: none;
+  }
+
+  nav {
+    button.nav-button {
+      display: block;
+    }
+  }
+
   .sliders {
     height: 300px;
   }
@@ -799,15 +832,6 @@ footer {
 
 // Small devices (landscape phones, 576px and up)
 @media (max-width: 576px) {
-  .nav-product-company {
-    display: none;
-  }
-
-  nav {
-    button.nav-button {
-      display: block;
-    }
-  }
 
   .prev-btn-slider {
     margin: 0 10px;

@@ -9,6 +9,10 @@
       align-self: center;
 }
 
+.fixed-top {
+  position: fixed;
+}
+
 .d-none {
   display: none !important;
 }
@@ -29,6 +33,14 @@
 
 .mtop-1 {
   margin-top: 1rem;
+}
+
+.mtop-5 {
+  margin-top: 70px;
+}
+
+.mbot-1 {
+  margin-bottom: 1rem;
 }
 
 .input-control {
@@ -913,6 +925,11 @@ main {
   margin-bottom: 15px;
 }
 
+.contact .main-contact .information-contact .box-contact .text-contact a {
+  text-decoration: none;
+  color: #000;
+}
+
 footer {
   padding-top: 2rem;
   padding-bottom: 3rem;
@@ -972,6 +989,12 @@ footer .row-flex .service-footer ul li {
   margin: 8px 0px;
 }
 
+footer .row-flex .link-footer ul li a,
+footer .row-flex .service-footer ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
 footer .row-flex .news-letter-footer {
   -webkit-box-flex: 2;
       -ms-flex: 2;
@@ -986,6 +1009,15 @@ footer .row-flex .news-letter-footer span {
 
 footer .row-flex .news-letter-footer .desc-news-letter {
   margin: 10px 0px;
+}
+
+footer .row-flex .news-letter-footer .input-subscribe input {
+  margin-bottom: .5rem;
+  margin-top: .5rem;
+}
+
+footer .row-flex .news-letter-footer .input-subscribe input:focus {
+  outline: none;
 }
 
 .row-flex {
@@ -1020,6 +1052,12 @@ footer .row-flex .news-letter-footer .desc-news-letter {
 }
 
 @media (max-width: 768px) {
+  .nav-product-company {
+    display: none;
+  }
+  nav button.nav-button {
+    display: block;
+  }
   .sliders {
     height: 300px;
   }
@@ -1060,12 +1098,6 @@ footer .row-flex .news-letter-footer .desc-news-letter {
 }
 
 @media (max-width: 576px) {
-  .nav-product-company {
-    display: none;
-  }
-  nav button.nav-button {
-    display: block;
-  }
   .prev-btn-slider {
     margin: 0 10px;
   }
