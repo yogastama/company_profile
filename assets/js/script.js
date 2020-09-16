@@ -14,6 +14,8 @@ const slider = dom('.sliders');
 const prevBtnSlider = dom('.prev-btn-slider');
 const nextBtnSlider = dom('.next-btn-slider');
 const btnPortfolio = Array.from(domAll('.btn-portfolio'));
+const imagePortfolio = Array.from(domAll('.image-portfolio'));
+const modalPreview = dom('.modal-preview');
 navButton.addEventListener('click', function () {
     menuxs.classList.toggle('d-block');
 });
@@ -135,3 +137,18 @@ btnPortfolio.forEach((item, index) => {
     });
 });
 // end portfolio slider
+
+imagePortfolio.forEach((item, index) => {
+    item.addEventListener('click', function () {
+        let image = item.children[0].src;
+        image = image.replace(window.location.protocol + '//' + window.location.host + '/', '');
+        console.log(image);
+
+        modalPreview.innerHTML = `<img src="/${image}">`;
+        // set modal preview
+        modalPreview.classList.add('d-flex');
+    });
+});
+modalPreview.addEventListener('click', function () {
+    this.classList.remove('d-flex');
+});

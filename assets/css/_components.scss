@@ -4,6 +4,14 @@
     align-self: center;
 }
 
+.d-none {
+    display: none !important;
+}
+
+.d-flex {
+    display: flex !important;
+}
+
 // bg
 .bg-light {
     background-color: $light !important;
@@ -93,4 +101,22 @@ button.btn {
 button.btn-primary {
     background-color: rgb(124, 86, 226);
     color: #fff;
+}
+
+.modal-preview {
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    // border-radius: 10px;
+    background-color: rgba(124, 121, 121, 0.534);
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        width: 500px;
+    }
 }

@@ -9,6 +9,16 @@
       align-self: center;
 }
 
+.d-none {
+  display: none !important;
+}
+
+.d-flex {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
 .bg-light {
   background-color: #eaeaea !important;
 }
@@ -96,6 +106,27 @@ button.btn:focus {
 button.btn-primary {
   background-color: #7c56e2;
   color: #fff;
+}
+
+.modal-preview {
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(124, 121, 121, 0.534);
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal-preview img {
+  width: 500px;
 }
 
 .mt-2 {
