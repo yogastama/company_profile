@@ -109,11 +109,19 @@ function getOtherImagePortfolio(except) {
 const filterBtn = btnPortfolio.map((item) => {
     return item.dataset.filter;
 })
-
-// end get data filter
-console.log(getOtherImagePortfolio('app'));
-// portfolio slider
+// get btn active
+function getBtnPortfolioActive() {
+    btnPortfolio.forEach((item, index) => {
+        if (item.classList.contains('active')) {
+            console.log(item);
+            return item;
+        }
+    });
+}
+// end get btn active
+let btnPortfolioActive = '';
 btnPortfolio.forEach((item, index) => {
+
     item.addEventListener('click', function () {
         if (this.dataset.filter != 'all') {
             // ambil semua image yang sesuai
@@ -127,12 +135,28 @@ btnPortfolio.forEach((item, index) => {
             otherImageFilter.forEach((oif, oik) => {
                 oif.style.display = 'none';
             });
+            // remove active class in prev button
+            btnPortfolio.forEach((item, index) => {
+                if (item.classList.contains('active')) {
+                    return item.classList.remove('active');
+                }
+            });
+
+            // add active button in next button
+            item.classList.add('active');
         } else {
             let imageFilter = domAll('.image-portfolio');
             imageFilter.forEach((ifv, ifk) => {
                 ifv.style.display = 'flex';
             });
-            // console.log(imageFilter);
+            // remove active class in prev button
+            btnPortfolio.forEach((item, index) => {
+                if (item.classList.contains('active')) {
+                    return item.classList.remove('active');
+                }
+            });
+            // add active button in next button
+            item.classList.add('active');
         }
     });
 });
@@ -142,8 +166,6 @@ imagePortfolio.forEach((item, index) => {
     item.addEventListener('click', function () {
         let image = item.children[0].src;
         image = image.replace(window.location.protocol + '//' + window.location.host + '/', '');
-        console.log(image);
-
         modalPreview.innerHTML = `<img src="/${image}">`;
         // set modal preview
         modalPreview.classList.add('d-flex');

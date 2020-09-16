@@ -619,6 +619,7 @@ main {
   margin-right: 4px;
   cursor: pointer;
   text-transform: uppercase;
+  color: #fff;
 }
 
 .portfolio .filter-portfolio .btn-portfolio:hover {
@@ -627,6 +628,12 @@ main {
   border: 1px solid #5c5555;
   background-color: blanchedalmond;
   color: #5c5555;
+}
+
+.portfolio .filter-portfolio .btn-portfolio.active {
+  background-color: #fff;
+  color: rgba(92, 89, 89, 0.877);
+  border: 1px solid #5c5555;
 }
 
 .portfolio .main-portfolio {
