@@ -19,41 +19,73 @@ require_once '../autoload.php';
     </div>
     <div class="message-admin">
         <ul>
-            <li class="active" id="sudah">Belum dibaca</li>
-            <li id="belum">Sudah dibaca</li>
+            <li class="tab active" id="sudah">Belum dibaca</li>
+            <li class="tab" id="belum">Sudah dibaca</li>
         </ul>
         <div class="message-tab active" data-id="sudah">
-            <table border="1">
-                <thead>
-                    <tr>
-                        <th>Nama</th>
-                        <th>Email</th>
-                        <th>Judul</th>
-                        <th>Pesan</th>
-                        <th>Waktu</th>
-                        <th>Aksi</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <?php foreach (getNewMessage() as $message) { ?>
+            <div class="table-responsive">
+                <table border="1">
+                    <thead>
                         <tr>
-                            <td><?= $message['name']; ?></td>
-                            <td><?= $message['email']; ?></td>
-                            <td><?= $message['title']; ?></td>
-                            <td><?= $message['message']; ?></td>
-                            <td><?= $message['time']; ?></td>
-                            <td>
-                                <a href="" class="btn btn-primary">
-                                    Baca
-                                </a>
-                            </td>
+                            <th>Nama</th>
+                            <th>Email</th>
+                            <th>Judul</th>
+                            <th>Pesan</th>
+                            <th>Waktu</th>
+                            <th>Aksi</th>
                         </tr>
-                    <?php } ?>
-                </tbody>
-            </table>
+                    </thead>
+                    <tbody>
+                        <?php foreach (getNewMessage() as $message) { ?>
+                            <tr>
+                                <td><?= $message['name']; ?></td>
+                                <td><?= $message['email']; ?></td>
+                                <td><?= $message['title']; ?></td>
+                                <td><?= $message['message']; ?></td>
+                                <td><?= $message['time']; ?></td>
+                                <td>
+                                    <a href="" class="btn btn-primary">
+                                        Baca
+                                    </a>
+                                </td>
+                            </tr>
+                        <?php } ?>
+                    </tbody>
+                </table>
+            </div>
         </div>
         <div class="message-tab" data-id="belum">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, sed.</div>
     </div>
+    <script>
+        function dom(el) {
+            return document.querySelector(el);
+        }
+
+        function domAll(el) {
+            return document.querySelectorAll(el);
+        }
+        const tabs = domAll('.tab');
+        // tab
+        tabs.forEach((item, index) => {
+            item.addEventListener('click', function() {
+                // get tab active
+                let tabActive = dom('.tab.active');
+                // get tab not active
+                tabActive.classList.toggle('active');
+                this.classList.toggle('active');
+                // get message not active
+                let messageTab = Array.from(domAll('.message-tab'));
+                let active = '';
+                messageTab.forEach((item, index) => {
+                    if (item.classList.contains('active')) {
+                        item.classList.toggle('active');
+                    } else {
+                        item.classList.toggle('active');
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>

@@ -18,6 +18,7 @@ const imagePortfolio = Array.from(domAll('.image-portfolio'));
 const modalPreview = dom('.modal-preview');
 const sidebarLink = domAll('.anchor-nav');
 const sidebar = dom('#sidebar');
+const tabs = domAll('.tab');
 navButton.addEventListener('click', function () {
     menuxs.classList.toggle('d-block');
 });

@@ -648,17 +648,17 @@ footer {
       // background-color: #f00;
 
       .company-name-footer {
-        font-family: $mainFont
+        font-family: $mainFont;
       }
 
       .company-address-footer {
         margin-top: 1rem;
-        font-family: $mainFont
+        font-family: $mainFont;
       }
 
       .phone-company-footer {
         margin-top: 1rem;
-        font-family: $mainFont
+        font-family: $mainFont;
       }
 
       .email-company-footer {
@@ -705,8 +705,8 @@ footer {
 
       .input-subscribe {
         input {
-          margin-bottom: .5rem;
-          margin-top: .5rem;
+          margin-bottom: 0.5rem;
+          margin-top: 0.5rem;
 
           &:focus {
             outline: none;
@@ -714,7 +714,6 @@ footer {
         }
       }
     }
-
   }
 }
 
@@ -787,42 +786,46 @@ footer {
 
   .message-tab.active {
     width: 90%;
+    height: 500px;
     margin-top: 10px;
     display: flex;
     // background-color: #f00;
     padding-bottom: 10px;
     height: 100px;
-
-    table {
+    .table-responsive {
+      height: 100%;
       width: 100%;
-      display: table;
-      border-top-width: 1px solid black !important;
-      border-right-width: 1px solid black !important;
-      border-bottom-width: 1px solid black !important;
-      border-left-width: 1px solid black !important;
-      box-sizing: border-box;
-      border-spacing: 2px;
-      border-color: #333;
-      border-collapse: collapse;
 
+      table {
+        overflow-y: visible;
+        overflow-x: auto;
+        width: 100%;
+        display: table;
+        border-top-width: 1px solid black !important;
+        border-right-width: 1px solid black !important;
+        border-bottom-width: 1px solid black !important;
+        border-left-width: 1px solid black !important;
+        box-sizing: border-box;
+        border-spacing: 2px;
+        border-color: #333;
+        border-collapse: collapse;
 
-      thead {
-        tr {
-          th {
-            padding: 10px;
+        thead {
+          tr {
+            th {
+              padding: 10px;
+            }
           }
         }
 
-      }
-
-      tbody {
-        tr {
-          td {
-            padding: 30px;
+        tbody {
+          tr {
+            td {
+              padding: 30px;
+            }
           }
         }
       }
-
     }
   }
 }
@@ -832,7 +835,8 @@ footer {
 // Extra small devices (portrait phones, less than 576px)
 // No media query for `xs` since this is the default in Bootstrap
 // Extra large devices (large desktops, 1200px and up)
-@media (max-width: 1200px) {}
+@media (max-width: 1200px) {
+}
 
 // Large devices (desktops, 992px and up)
 @media (max-width: 992px) {
@@ -931,7 +935,6 @@ footer {
 
 // Small devices (landscape phones, 576px and up)
 @media (max-width: 576px) {
-
   .prev-btn-slider {
     margin: 0 10px;
   }

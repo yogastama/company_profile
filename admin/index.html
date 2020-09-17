@@ -1,39 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
-    <link rel="stylesheet" href="/assets/css/style.css">
-</head>
+    <link rel="stylesheet" href="/assets/css/style.css" />
+  </head>
 
-<body>
-    <form action="login.php" method="POST">
-        <div class="login-wrap">
-            <div class="input-login">
-                <center>
-                    <h1>
-                        Login
-                    </h1>
-                </center>
-                <div class="input-control">
-                    <label for="">Email</label>
-                    <input type="email" name="email" />
-                </div>
-                <div class="input-control">
-                    <label for="">Password</label>
-                    <input type="password" name="password" />
-                </div>
-                <center>
-                    <button class="btn btn-primary mtop-1">
-                        Login
-                    </button>
-                </center>
-            </div>
+  <body>
+    <form action="/admin/login.php" method="POST">
+      <div class="login-wrap">
+        <div class="input-login">
+          <center>
+            <h1>Login</h1>
+          </center>
+          <div class="input-control">
+            <label for="">Email</label>
+            <input type="email" name="email" />
+          </div>
+          <div class="input-control">
+            <label for="">Password</label>
+            <input type="password" name="password" />
+          </div>
+          <center>
+            <button class="btn btn-primary mtop-1">Login</button>
+          </center>
         </div>
+      </div>
     </form>
     <script src="/assets/js/script.js"></script>
-</body>
-
+  </body>
 </html>

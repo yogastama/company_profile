@@ -1012,8 +1012,8 @@ footer .row-flex .news-letter-footer .desc-news-letter {
 }
 
 footer .row-flex .news-letter-footer .input-subscribe input {
-  margin-bottom: .5rem;
-  margin-top: .5rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
 }
 
 footer .row-flex .news-letter-footer .input-subscribe input:focus {
@@ -1093,6 +1093,7 @@ footer .row-flex .news-letter-footer .input-subscribe input:focus {
 
 .message-admin .message-tab.active {
   width: 90%;
+  height: 500px;
   margin-top: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1101,7 +1102,14 @@ footer .row-flex .news-letter-footer .input-subscribe input:focus {
   height: 100px;
 }
 
-.message-admin .message-tab.active table {
+.message-admin .message-tab.active .table-responsive {
+  height: 100%;
+  width: 100%;
+}
+
+.message-admin .message-tab.active .table-responsive table {
+  overflow-y: visible;
+  overflow-x: auto;
   width: 100%;
   display: table;
   border-top-width: 1px solid black !important;
@@ -1115,11 +1123,11 @@ footer .row-flex .news-letter-footer .input-subscribe input:focus {
   border-collapse: collapse;
 }
 
-.message-admin .message-tab.active table thead tr th {
+.message-admin .message-tab.active .table-responsive table thead tr th {
   padding: 10px;
 }
 
-.message-admin .message-tab.active table tbody tr td {
+.message-admin .message-tab.active .table-responsive table tbody tr td {
   padding: 30px;
 }
 
