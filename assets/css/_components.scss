@@ -64,7 +64,7 @@
 
         &:focus {
             outline: none;
-            box-shadow: 0 0 30px rgba(85, 86, 87, 0.6)
+            box-shadow: 0 0 30px rgba(20, 20, 20, 0.555)
         }
     }
 
@@ -97,7 +97,7 @@
     }
 }
 
-button.btn {
+.btn {
     width: 100px;
     padding: 10px;
     border-radius: 5px;
@@ -110,7 +110,7 @@ button.btn {
     }
 }
 
-button.btn-primary {
+.btn-primary {
     background-color: rgb(124, 86, 226);
     color: #fff;
 }

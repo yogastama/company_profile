@@ -29,7 +29,7 @@ console.log(sidebar);
 // anchor
 sidebarLink.forEach((item, index) => {
     item.addEventListener('click', function () {
-        sidebar.classList.toggle('d-none');
+        menuxs.classList.toggle('d-block');
     });
 });
 // end anchor

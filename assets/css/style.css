@@ -71,8 +71,8 @@
 
 .input-control input:focus {
   outline: none;
-  -webkit-box-shadow: 0 0 30px rgba(85, 86, 87, 0.6);
-          box-shadow: 0 0 30px rgba(85, 86, 87, 0.6);
+  -webkit-box-shadow: 0 0 30px rgba(20, 20, 20, 0.555);
+          box-shadow: 0 0 30px rgba(20, 20, 20, 0.555);
 }
 
 .input-control textarea {
@@ -101,7 +101,7 @@
           box-shadow: 0 0 30px rgba(85, 86, 87, 0.6);
 }
 
-button.btn {
+.btn {
   width: 100px;
   padding: 10px;
   border-radius: 5px;
@@ -109,13 +109,13 @@ button.btn {
   cursor: pointer;
 }
 
-button.btn:focus {
+.btn:focus {
   -webkit-box-shadow: 0 0 30px rgba(85, 86, 87, 0.6);
           box-shadow: 0 0 30px rgba(85, 86, 87, 0.6);
   outline: none;
 }
 
-button.btn-primary {
+.btn-primary {
   background-color: #7c56e2;
   color: #fff;
 }
@@ -1028,6 +1028,99 @@ footer .row-flex .news-letter-footer .input-subscribe input:focus {
   margin: 0 auto;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   text-align: center;
+}
+
+.login-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 500px;
+}
+
+.login-wrap .input-login {
+  width: 300px;
+  padding: 10px;
+  margin: 0 auto;
+  border-radius: 5px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.title-admin {
+  width: 100%;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.title-admin h1 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.message-admin {
+  width: 80%;
+  margin: 1rem auto;
+}
+
+.message-admin ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.message-admin ul li {
+  padding: 10px;
+  background-color: white;
+  list-style-type: none;
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+.message-admin ul li.active {
+  border-bottom: 5px solid red;
+}
+
+.message-admin .message-tab {
+  width: 100%;
+  height: 100px;
+  display: none;
+}
+
+.message-admin .message-tab.active {
+  width: 90%;
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 10px;
+  height: 100px;
+}
+
+.message-admin .message-tab.active table {
+  width: 100%;
+  display: table;
+  border-top-width: 1px solid black !important;
+  border-right-width: 1px solid black !important;
+  border-bottom-width: 1px solid black !important;
+  border-left-width: 1px solid black !important;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-spacing: 2px;
+  border-color: #333;
+  border-collapse: collapse;
+}
+
+.message-admin .message-tab.active table thead tr th {
+  padding: 10px;
+}
+
+.message-admin .message-tab.active table tbody tr td {
+  padding: 30px;
 }
 
 @media (max-width: 992px) {
