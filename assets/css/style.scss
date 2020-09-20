@@ -786,19 +786,24 @@ footer {
 
   .message-tab.active {
     width: 90%;
-    height: 500px;
     margin-top: 10px;
     display: flex;
     // background-color: #f00;
     padding-bottom: 10px;
-    height: 100px;
+    height: 800px;
+
     .table-responsive {
-      height: 100%;
+      // .table-responsive {
+      display: block;
       width: 100%;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      -ms-overflow-style: -ms-autohiding-scrollbar;
+      // }
 
       table {
-        overflow-y: visible;
-        overflow-x: auto;
+        // overflow-y: visible;
+        // overflow-x: auto;
         width: 100%;
         display: table;
         border-top-width: 1px solid black !important;
@@ -809,6 +814,7 @@ footer {
         border-spacing: 2px;
         border-color: #333;
         border-collapse: collapse;
+        margin-bottom: 1rem;
 
         thead {
           tr {
@@ -835,8 +841,7 @@ footer {
 // Extra small devices (portrait phones, less than 576px)
 // No media query for `xs` since this is the default in Bootstrap
 // Extra large devices (large desktops, 1200px and up)
-@media (max-width: 1200px) {
-}
+@media (max-width: 1200px) {}
 
 // Large devices (desktops, 992px and up)
 @media (max-width: 992px) {

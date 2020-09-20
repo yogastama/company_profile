@@ -23,6 +23,11 @@
   display: flex !important;
 }
 
+.container {
+  width: 80%;
+  margin: 20px auto;
+}
+
 .bg-light {
   background-color: #eaeaea !important;
 }
@@ -102,11 +107,11 @@
 }
 
 .btn {
-  width: 100px;
   padding: 10px;
   border-radius: 5px;
   border: none;
   cursor: pointer;
+  margin-right: 8px;
 }
 
 .btn:focus {
@@ -117,6 +122,11 @@
 
 .btn-primary {
   background-color: #7c56e2;
+  color: #fff;
+}
+
+.btn-danger {
+  background-color: #ff7980;
   color: #fff;
 }
 
@@ -139,6 +149,57 @@
 
 .modal-preview img {
   width: 500px;
+}
+
+.card {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 1px solid rgba(102, 99, 99, 0.385);
+}
+
+.card .card-header {
+  width: 100%;
+  padding: 10px;
+  background-color: #f0f0f0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.card .card-body {
+  width: 100%;
+  padding: 10px;
+  background-color: #f2e8e8;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  line-height: 28px;
+}
+
+.card .card-body .main-text {
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.card .card-footer {
+  width: 100%;
+  padding: 20px;
+  background-color: #f0f0f0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .mt-2 {
@@ -1093,23 +1154,23 @@ footer .row-flex .news-letter-footer .input-subscribe input:focus {
 
 .message-admin .message-tab.active {
   width: 90%;
-  height: 500px;
   margin-top: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding-bottom: 10px;
-  height: 100px;
+  height: 800px;
 }
 
 .message-admin .message-tab.active .table-responsive {
-  height: 100%;
+  display: block;
   width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
 }
 
 .message-admin .message-tab.active .table-responsive table {
-  overflow-y: visible;
-  overflow-x: auto;
   width: 100%;
   display: table;
   border-top-width: 1px solid black !important;
@@ -1121,6 +1182,7 @@ footer .row-flex .news-letter-footer .input-subscribe input:focus {
   border-spacing: 2px;
   border-color: #333;
   border-collapse: collapse;
+  margin-bottom: 1rem;
 }
 
 .message-admin .message-tab.active .table-responsive table thead tr th {

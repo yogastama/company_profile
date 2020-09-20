@@ -16,6 +16,11 @@
     display: flex !important;
 }
 
+.container {
+    width: 80%;
+    margin: 20px auto;
+}
+
 // bg
 .bg-light {
     background-color: $light !important;
@@ -98,11 +103,12 @@
 }
 
 .btn {
-    width: 100px;
+    // width: 100px;
     padding: 10px;
     border-radius: 5px;
     border: none;
     cursor: pointer;
+    margin-right: 8px;
 
     &:focus {
         box-shadow: 0 0 30px rgba(85, 86, 87, 0.6);
@@ -112,6 +118,11 @@
 
 .btn-primary {
     background-color: rgb(124, 86, 226);
+    color: #fff;
+}
+
+.btn-danger {
+    background-color: rgb(255, 121, 128);
     color: #fff;
 }
 
@@ -130,5 +141,42 @@
 
     img {
         width: 500px;
+    }
+}
+
+.card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(102, 99, 99, 0.385);
+
+    .card-header {
+        width: 100%;
+        padding: 10px;
+        background-color: rgb(240, 240, 240);
+        box-sizing: border-box;
+    }
+
+    .card-body {
+        width: 100%;
+        padding: 10px;
+        background-color: rgb(242, 232, 232);
+        box-sizing: border-box;
+        line-height: 28px;
+
+        .main-text {
+            margin-top: 20px;
+            padding: 20px;
+        }
+    }
+
+    .card-footer {
+        width: 100%;
+        padding: 20px;
+        background-color: rgb(240, 240, 240);
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }

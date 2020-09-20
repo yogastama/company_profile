@@ -1,6 +1,6 @@
 <?php
-require_once "helpers/helper.php";
 session_start();
+require_once "helpers/helper.php";
 // get post
 $post = $_POST;
 // get all user
